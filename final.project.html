@@ -1,16 +1,25 @@
 <html>
-    <head>
-        Welcome
+<head>
+</head>
 
-        <body>
-            <div id="content"> </div>
-             <script>
-                 const elem = document.getElementById ('content')
+<body>
+  <div id="content">
+    <h1 id="title">Welcome</h1>
+  </div>
 
-                 elem.style.backgroundColor = 'blue';
-                 elem.style.height = '1500px';
-                 elem.style.width = '2500px';
-             </script>
-        </body>
-    </head>
+  <script>
+    const elem = document.getElementById("content");
+
+    elem.style.backgroundColor = "blue";
+    elem.style.height = "1500px";
+    elem.style.width = "2500px";
+
+    const title = document.getElementById("title");
+    title.style.color = "white";
+    title.style.fontSize = "80px";  
+    title.style.position = "absolute";
+    title.style.top = "10px";
+    title.style.left = "10px";
+  </script>
+</body>
 </html>
