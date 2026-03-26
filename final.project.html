@@ -5,6 +5,13 @@
 <body>
   <div id="content">
     <h1 id="title">Welcome</h1>
+
+    
+    <div id="images">
+      <img src="https://viennafashionweek.com/wp-content/uploads/2024/09/2024-09-13-MQVFW-18-00h-b-Nicolas-Dudek-SW-Social-Media-003.jpg">
+      <img src="https://i0.wp.com/www.hedigrager.com/wp-content/uploads/2024/10/look19_foto-stefan_j._wolf.jpg?w=233&h=350&ssl=1">
+      <img src="https://viennafashionweek.com/wp-content/uploads/2024/09/2024-09-13-MQVFW-18-00h-b-Nicolas-Dudek-SW-Social-Media-001-1024x683.jpg">
+    </div>
   </div>
 
   <script>
@@ -20,6 +27,20 @@
     title.style.position = "absolute";
     title.style.top = "10px";
     title.style.left = "10px";
+
+    // Style images container
+    const images = document.getElementById("images");
+    images.style.position = "absolute";
+    images.style.top = "120px";  
+    images.style.left = "10px";
+    images.style.display = "flex"; 
+    images.style.gap = "20px";     
+
+    const imgs = images.getElementsByTagName("img");
+    for (let i = 0; i < imgs.length; i++) {
+      imgs[i].style.width = "300px";
+      imgs[i].style.height = "auto";
+    }
   </script>
 </body>
 </html>
